@@ -127,15 +127,18 @@ namespace Agenda
 
         private void eliminarTodoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            dgvDatos.Rows.Clear();
-            try
+            if(MessageBox.Show("¿Desea elminar todos los datos?", "Agenda" , MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                var baseDatos = cargarDatos();
-                guardarJson(baseDatos);
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show("Error al eliminar datos. " + ex.Message, "Agenda", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                dgvDatos.Rows.Clear();
+                try
+                {
+                    var baseDatos = cargarDatos();
+                    guardarJson(baseDatos);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al eliminar datos. " + ex.Message, "Agenda", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 

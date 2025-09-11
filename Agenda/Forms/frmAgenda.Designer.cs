@@ -64,8 +64,8 @@
             // archivoToolStripMenuItem
             // 
             this.archivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.salirToolStripMenuItem,
-            this.eliminarTodoToolStripMenuItem});
+            this.eliminarTodoToolStripMenuItem,
+            this.salirToolStripMenuItem});
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
             this.archivoToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.archivoToolStripMenuItem.Text = "Opciones";
@@ -73,14 +73,14 @@
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.salirToolStripMenuItem.Text = "&Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // eliminarTodoToolStripMenuItem
             // 
             this.eliminarTodoToolStripMenuItem.Name = "eliminarTodoToolStripMenuItem";
-            this.eliminarTodoToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.eliminarTodoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.eliminarTodoToolStripMenuItem.Text = "&Eliminar todo";
             this.eliminarTodoToolStripMenuItem.Click += new System.EventHandler(this.eliminarTodoToolStripMenuItem_Click);
             // 
